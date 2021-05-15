@@ -7,11 +7,36 @@
         <div>{{ message }}</div>
     {% endif %}
     
+
+
+
         <!--Content before waves-->
     <div class="header">
-            
-        <!--Login/Password Container-->
-        <div class="inner-header flex">
+      <div class="inner-header flex"></div>        
+
+
+      <div class="login-box">
+        <h2>Login</h2>
+        <form action="{% url 'login' %}" method="post">
+          {% csrf_token %}
+          <div class="user-box">
+            <input type="text" name="username" required="">
+            <label>Username</label>
+          </div>
+          <div class="user-box">
+            <input type="password" name="password" required="">
+            <label>Password</label>
+          </div>
+          <div>
+            <input type="submit", value="Login">
+          </div>
+
+
+        </form>
+      </div>
+
+       <!--Login/Password Container-->
+<!--        <div class="inner-header flex">
             <form action="{% url 'login' %}" method="post">
                 {% csrf_token %}
                 <input type="text", name="username", placeholder="Username">
@@ -19,7 +44,8 @@
                 <input type="submit", value="Login">
             </form>
         </div>
-         <!--Login/Password Container Ends-->
+-->
+        <!--Login/Password Container Ends-->
 
 
     <!--Waves Container-->
