@@ -1,0 +1,66 @@
+{% extends "database/layout.html" %}
+
+{% block body %}
+
+
+{% if message %}
+        <div>{{ message }}</div>
+    {% endif %}
+    
+<div>
+    <table>
+        MAIN COMPANIES DATABASE
+        <tr>
+            <th>element</th>
+            <th>description</th>
+            <th>Warning!</th>
+        </tr>
+        <tr>    
+            <td>Search DB</td>
+            <td>Go to the search engine</td>
+            <td>hopefully you cannot break anything here</td>
+        </tr>
+        <tr>
+            <td>element_2</td>
+            <td>Desc_2</td>   
+            <td>Warning_2</td>   
+        </tr>
+        <tr>
+            <td>element_3</td>
+            <td>Desc_3</td>   
+            <td>Warning_3</td>   
+        </tr>
+    </table>
+</div>
+
+<BR>
+
+<div>
+    <table>
+        TEMP MONTHLY COMPANIES DATABASE
+        <tr>
+            <th>element</th>
+            <th>description</th>
+            <th>Warning_3!</th>
+        </tr>
+        <tr>    
+            <td>element_1</td>
+            <td>Desc_1</td>
+            <td>Warning_1</td>
+        </tr>
+        <tr>
+            <td>element_2</td>
+            <td>Desc_2</td>   
+            <td>Warning_2</td>   
+        </tr>
+        <tr>
+            <td>element_3</td>
+            <td>Desc_3</td>   
+            <td>Warning_3</td>   
+        </tr>
+    </table>
+</div>
+
+
+
+{% endblock %}
